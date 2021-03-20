@@ -8,10 +8,10 @@
       <span></span>
 
       <ul id="menu">
-        <a href="#"><li>Home</li></a>
-        <a href="#"><li>About me</li></a>
-        <a href="#"><li>Projects</li></a>
-        <a href="#"><li>Skills</li></a>
+        <router-link to="/"><li>Home</li></router-link>
+        <router-link to="/about"><li>About me</li></router-link>
+        <router-link to="/projects"><li>Projects</li></router-link>
+        <router-link to="/skills"><li>Skills</li></router-link>
       </ul>
     </div>
   </nav>
@@ -99,8 +99,7 @@
   font-size: 1rem;
   list-style-type: none;
 
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
+  transform: translate(-110%, 0);
 
   transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
 }
@@ -115,5 +114,11 @@
  */
 #menuToggle input:checked ~ ul {
   transform: none;
+}
+
+@media screen and (min-width: 768px) {
+  #menu {
+    transform: translate(-100%, 0);
+  }
 }
 </style>

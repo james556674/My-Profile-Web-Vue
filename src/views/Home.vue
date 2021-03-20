@@ -8,7 +8,8 @@
 
       <p>
         {{ Intro.myInroEng.secondP }} <br />
-        <router-link to="/">{{ Intro.myInroEng.project }}</router-link> 、
+        <router-link to="/projects">{{ Intro.myInroEng.project }}</router-link>
+        、
         <router-link to="/">{{ Intro.myInroEng.skills }}</router-link>
         {{ Intro.myInroEng.and }}
         <router-link to="/">{{ Intro.myInroEng.info }}</router-link>
@@ -26,7 +27,8 @@
 
       <p>
         {{ Intro.myInroChi.secondP }} <br />
-        <router-link to="/">{{ Intro.myInroChi.project }}</router-link> 、
+        <router-link to="/projects">{{ Intro.myInroChi.project }}</router-link>
+        、
         <router-link to="/">{{ Intro.myInroChi.skills }}</router-link>
         {{ Intro.myInroChi.and }}
         <router-link to="/">{{ Intro.myInroChi.info }}</router-link>
