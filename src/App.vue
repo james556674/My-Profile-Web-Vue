@@ -24,6 +24,10 @@ export default {
   text-align: center;
   color: #2c3e50;
 }
+a {
+  text-decoration: none;
+  color: #2c3e50;
+}
 
 #nav {
   padding: 30px;
@@ -36,5 +40,12 @@ export default {
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+
+.outer-shadow {
+  box-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+}
+.inner-shadow {
+  box-shadow: inset 3px 3px 3px #d0d0d0, inset -3px -3px 3px #f8f8f8;
 }
 </style>
