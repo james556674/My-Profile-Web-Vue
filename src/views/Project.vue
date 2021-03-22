@@ -1,17 +1,40 @@
 <template>
   <div class="project-page">
-    <h2>My Projects</h2>
-    <div class="div-line"></div>
-    <div class="container">
-      <div class="project-wrapper" v-for="pro in projects" :key="pro.id">
-        <router-link :to="{ name: 'Project-Self', params: { id: pro.id } }">
-          <div class="project-img">
-            <img :src="pro.pic" />
-          </div>
-        </router-link>
+    <div class="project-title">
+      <h1 class="title-name">{{ project.name }}</h1>
+      <span>Caregory - Web App</span>
+    </div>
 
-        <div class="project-name">{{ pro.name }}</div>
-        <div class="project-description">{{ pro.shortIntro }}</div>
+    <div class="container">
+      <div class="project-wrapper">
+        <div class="project-intro">
+          <div class="left-side">
+            <h3>專案介紹</h3>
+            <div class="project-description">
+              <p>
+                {{ project.longIntro }}
+              </p>
+            </div>
+          </div>
+          <div class="right-side">
+            <h3>相關資訊</h3>
+            <div class="project-info">
+              <span>網站連結 - </span>
+              <a :href="project.demo"> demo domain </a>
+            </div>
+            <div class="project-info" v-show="project.github">
+              <span>程式碼 - </span> <a :href="project.github"> GitHub </a>
+            </div>
+            <div class="project-info">
+              <span>相關工具 - </span> {{ project.tool }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="project-img">
+        <div class="img-box inner-shadow">
+          <img :src="project.pic" class="outer-shadow" />
+        </div>
       </div>
     </div>
   </div>
@@ -69,16 +92,13 @@ const dummyData = [
 export default {
   data() {
     return {
-      projects: [],
+      project: {},
     };
   },
   created() {
-    this.fetchData();
-  },
-  methods: {
-    fetchData() {
-      this.projects = dummyData;
-    },
+    const { id } = this.$route.params;
+    const data = dummyData.find((project) => project.id === Number(id));
+    this.project = data;
   },
 };
 </script>
@@ -86,48 +106,88 @@ export default {
 <style scoped>
 .project-page {
   margin: auto;
-  min-width: 300px;
-}
-.container {
-  margin: auto;
   width: 80%;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-  justify-items: center;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.project-page .project-title {
+  text-align: left;
+  position: relative;
+}
+
+.project-page .project-title::after {
+  content: "";
+  width: 100%;
+  border: 0.2px #7a828a solid;
+  position: absolute;
+  bottom: -7px;
+  left: 0px;
+  opacity: 30%;
 }
 
 .project-wrapper {
-  width: 300px;
-  margin-top: 2rem;
+  position: relative;
+}
+
+.project-wrapper:after {
+  content: "";
+  width: 100%;
+  border: 0.2px #7a828a solid;
+  position: absolute;
+  bottom: -10px;
+  left: 0px;
+  opacity: 30%;
+}
+
+.project-page .project-title h1 {
+  margin-bottom: 0.5rem;
+}
+
+.project-wrapper .project-intro {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.project-wrapper .project-intro .left-side {
+  width: 70%;
+  text-align: left;
+}
+
+.project-wrapper .project-intro .left-side .project-description {
+  width: 90%;
+}
+
+.project-wrapper .project-intro .right-side {
+  width: 30%;
+  text-align: left;
+}
+
+.project-wrapper .project-intro .right-side .project-info {
+  margin-top: 1rem;
+}
+
+.project-wrapper .project-intro .right-side .project-info span {
+  font-weight: 500;
 }
 
 .project-img {
-  width: 350px;
-  height: 200px;
-  background: grey;
-  cursor: pointer;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
-.project-img:hover {
-  transform: translate(-1px, -5px);
-  transition: all 0.2s ease-out;
+.project-img .img-box {
+  width: 600px;
+  height: 400px;
+  padding: 15px;
+  border-radius: 5px;
 }
-.project-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  box-shadow: 0px 4px 8px rgba(38, 38, 38, 0.2);
-}
-
-.project-name {
-  color: grey;
-  margin-top: 1rem;
-  text-align: left;
-}
-
-.project-description {
-  color: black;
-  text-align: left;
-  font-size: 14px;
+.project-img .img-box img {
+  width: 95%;
+  height: 95%;
+  border: 10px solid transparent;
+  border-radius: 5px;
 }
 </style>

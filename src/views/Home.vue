@@ -117,7 +117,7 @@ button:hover {
   transform: scale(1.05);
 }
 a {
-  text-decoration: orangered;
+  text-decoration: rgb(236, 147, 114);
   position: relative;
 }
 
@@ -133,7 +133,7 @@ a::after {
   right: -0.1em;
   bottom: 0;
   transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-  background-color: rgba(79, 192, 141, 0.5);
+  background-color: rgb(236, 147, 114);
 }
 
 .home {

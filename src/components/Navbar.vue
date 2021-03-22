@@ -34,7 +34,7 @@
 }
 
 #menuToggle a:hover {
-  color: tomato;
+  color: rgb(236, 147, 114);
 }
 
 #menuToggle input {
