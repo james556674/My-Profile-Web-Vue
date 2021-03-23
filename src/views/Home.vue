@@ -10,15 +10,17 @@
         {{ Intro.myInroEng.secondP }} <br />
         <router-link to="/projects">{{ Intro.myInroEng.project }}</router-link>
         、
-        <router-link to="/">{{ Intro.myInroEng.skills }}</router-link>
+        <router-link to="/skills">{{ Intro.myInroEng.skills }}</router-link>
         {{ Intro.myInroEng.and }}
-        <router-link to="/">{{ Intro.myInroEng.info }}</router-link>
+        <router-link to="/about">{{ Intro.myInroEng.info }}</router-link>
       </p>
       <p>
         {{ Intro.myInroEng.thirdP }}
-        <router-link to="/">{{ Intro.myInroEng.blog }}</router-link>
+        <a href="https://medium.com/@james556674">{{ Intro.myInroEng.blog }}</a>
         {{ Intro.myInroEng.and }}
-        <router-link to="/">{{ Intro.myInroEng.github }}</router-link>
+        <a href="https://github.com/james556674">{{
+          Intro.myInroEng.github
+        }}</a>
         {{ Intro.myInroEng.forthP }}
       </p>
     </div>
@@ -29,15 +31,17 @@
         {{ Intro.myInroChi.secondP }} <br />
         <router-link to="/projects">{{ Intro.myInroChi.project }}</router-link>
         、
-        <router-link to="/">{{ Intro.myInroChi.skills }}</router-link>
+        <router-link to="/skills">{{ Intro.myInroChi.skills }}</router-link>
         {{ Intro.myInroChi.and }}
-        <router-link to="/">{{ Intro.myInroChi.info }}</router-link>
+        <router-link to="/info">{{ Intro.myInroChi.info }}</router-link>
       </p>
       <p>
         {{ Intro.myInroChi.thirdP }}
-        <router-link to="/">{{ Intro.myInroChi.blog }}</router-link>
+        <a href="https://medium.com/@james556674">{{ Intro.myInroChi.blog }}</a>
         {{ Intro.myInroChi.and }}
-        <router-link to="/">{{ Intro.myInroChi.github }}</router-link>
+        <a href="https://github.com/james556674">{{
+          Intro.myInroChi.github
+        }}</a>
         {{ Intro.myInroChi.forthP }}
       </p>
     </div>
@@ -49,9 +53,9 @@ const dummyData = {
   myInroEng: {
     firstP: "Hello My name is Tsai Chung Wei",
     secondP:
-      "i am a learner for becoming a front-end-engineer. this web is written by vue.js framework, recording ",
-    thirdP: "furthermore, i also get a ",
-    forthP: "to record my Learning process",
+      "I am a learner for becoming a front-end-engineer. This web is written by vue.js framework, recording ",
+    thirdP: "Furthermore, I also get a ",
+    forthP: "to record my learning process",
     project: "my project",
     skills: "my skills",
     info: "my info",
