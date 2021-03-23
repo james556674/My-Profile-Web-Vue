@@ -9,24 +9,33 @@
       <div class="about-img">
         <div class="img-box inner-shadow">
           <img
-            src="https://lh3.googleusercontent.com/ZIiaWF9GREsYOgVbB7ztCUoUrlt5P2JI7PWuo-6uJepU3N0TsQDdnB3KBNCaBFTxr5j8KgLNfjAYxjb-MUZ3-FQek4rp7n-mlUJc0rl8J69LByFQZTwGAAiAWPZf9lw51s0YPShSihKA-lFt2_659SxMzTcz31n6JETwVzsZKNr2byvS3RscEtI66-GvhwVGNgTJ5G_lGbX_dofbEt84XwQ6SuU8XrgCcWrWnsgHbhUJEuZNTwlA2cpnVG2N5vE3hKqGI5zgsKTqFURrT9YbhgpUttTiSUa0M1-7oPcKlbMPxYsr7Rn1bQPSUCTSpeWm04VxM5rgtzAmwLPK19kC4564CsXRCHYvNACud4uLJ6UbUtiaq3wfxhmxLtjQZ_XDWDBvxCUmERmOxWHNCLGPgmOREy63rCrV2RXQB8Dvyx5gwhFbZ5oS-BzNRwiTEdGI6tMdES2-YodEC2LUZAjCnJJBLJvYxmyvmJFwi3UJSYC2RXIjDS0oOqn_BnEyQv0_DgPjrjVCS91Mqtmav0NmE-DOBtOeiuqJ5jiCyt4jn7mwQDNjG-ozmvsOx_hykRv2hInnfymah-UarjhKNeIaHi8U7k1wNbR7cyzGzyVR4BznDakB8aRdFnnDdkCrhwcA5AENYo2RIgAakdkFFYT4cbI7irdDCkOQviR4Q8Ao8TS5ypX7RAXwZvDkGlWOKfEoiy05Aqz8_hYtUMjeN9J95F4=s400-no?authuser=0"
+            src="https://github.com/james556674/My-Profile-Web-Vue/blob/master/assets/projectPics/selfImg.jpeg?raw=true"
             class="outer-shadow"
             alt="profile-pic"
           />
         </div>
         <!-- social links start -->
         <div class="social-links">
-          <a href="#" class="outer-shadow hover-in-shadow"
+          <a
+            href="https://github.com/james556674"
+            class="outer-shadow hover-in-shadow"
+            target="_blank"
             ><font-awesome-icon
               class="font-awesome-icon"
               :icon="['fab', 'github']"
           /></a>
-          <a href="#" class="outer-shadow hover-in-shadow"
+          <a
+            href="https://medium.com/@james556674"
+            class="outer-shadow hover-in-shadow"
+            target="_blank"
             ><font-awesome-icon
               class="font-awesome-icon"
               :icon="['fab', 'medium']"
           /></a>
-          <a href="#" class="outer-shadow hover-in-shadow"
+          <a
+            href="https://codepen.io/James556674"
+            class="outer-shadow hover-in-shadow"
+            target="_blank"
             ><font-awesome-icon
               class="font-awesome-icon"
               :icon="['fab', 'codepen']"

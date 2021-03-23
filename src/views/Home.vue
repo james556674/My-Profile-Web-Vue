@@ -16,9 +16,11 @@
       </p>
       <p>
         {{ Intro.myInroEng.thirdP }}
-        <a href="https://medium.com/@james556674">{{ Intro.myInroEng.blog }}</a>
+        <a href="https://medium.com/@james556674" target="_blank">{{
+          Intro.myInroEng.blog
+        }}</a>
         {{ Intro.myInroEng.and }}
-        <a href="https://github.com/james556674">{{
+        <a href="https://github.com/james556674" target="_blank">{{
           Intro.myInroEng.github
         }}</a>
         {{ Intro.myInroEng.forthP }}
@@ -37,9 +39,11 @@
       </p>
       <p>
         {{ Intro.myInroChi.thirdP }}
-        <a href="https://medium.com/@james556674">{{ Intro.myInroChi.blog }}</a>
+        <a href="https://medium.com/@james556674" target="_blank">{{
+          Intro.myInroChi.blog
+        }}</a>
         {{ Intro.myInroChi.and }}
-        <a href="https://github.com/james556674">{{
+        <a href="https://github.com/james556674" target="_blank">{{
           Intro.myInroChi.github
         }}</a>
         {{ Intro.myInroChi.forthP }}
