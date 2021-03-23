@@ -37,17 +37,21 @@
       <div class="about-info">
         <div class="about-info-eng" v-if="this.language">
           <p>
-            <span>Hi! My name is TSAI CHUNG WEI. I am a Web Developer.</span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse
+            <span
+              >Hi! My name is TSAI CHUNG WEI. I am learner for becoming a
+              front-end-engineer.</span
+            >
+            I am a man who really like challenge. I join in lots of competition
+            in my student's life. There are some ball games in collage and three
+            commercial competition in graduate school. To me, I would like to
+            spend a long time to finish a goal, like a year or half year. The
+            reason is that I like enjoying the beautiful outcome, and also every
+            growth opportunities when I get failure.
           </p>
           <p>
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-            cupidatat non proident, sunt in culpa qui officia deserunt mollit
-            anim id est laborum
+            I decided to learn code after a commercial competition failure, I
+            know that I have to learn skills, or my proposal is always just a
+            proposal.
           </p>
         </div>
         <div class="about-info-chi" v-else>
@@ -163,9 +167,8 @@
                   <h3>實習助教</h3>
                   <h4>AlphaCamp</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    為前端網頁開發班的學生批改作業，並針對程式品質、邏輯思考的方式給予建議。
+                    課程內容以基礎JavaScript、HTML、CSS為主，包含迴圈應用、條件式應用、基礎切版...等
                   </p>
                 </div>
               </div>
@@ -183,9 +186,7 @@
                   <h3>銷售業務</h3>
                   <h4>禮依藝行銷有限公司</h4>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
+                    個人主要負責與客戶接洽，編排客戶字稿，追蹤物流，以及陌生開發外
                   </p>
                 </div>
               </div>
@@ -408,7 +409,7 @@ export default {
 }
 .about-section .timeline .timeline-item:nth-child(odd) {
   padding-right: calc(50% + 50px);
-  text-align: right;
+  text-align: left;
 }
 .about-section .timeline .timeline-item:nth-child(even) {
   padding-left: calc(50% + 50px);
