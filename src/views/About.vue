@@ -50,17 +50,16 @@
               >Hi! My name is TSAI CHUNG WEI. I am learner for becoming a
               front-end-engineer.</span
             >
-            I am a man who really like challenge. I join in lots of competition
-            in my student's life. There are some ball games in collage and three
-            commercial competition in graduate school. To me, I would like to
-            spend a long time to finish a goal, like a year or half year. The
-            reason is that I like enjoying the beautiful outcome, and also every
-            growth opportunities when I get failure.
+            I like challenges. I join lots of competitions in my student's life.
+            There are some ball games in college and three commercial
+            competitions in graduate school. To me, I like to spend a long time
+            finishing a goal, like a year or half year. The reason is that I
+            like the beautiful outcome, and every growth I got when I failed.
           </p>
           <p>
-            I decided to learn code after a commercial competition failure, I
-            know that I have to learn skills, or my proposal is always just a
-            proposal.
+            I decided to learn code after a failure in commercial competition. I
+            know that I have to learn some skills, or my proposal is nothing
+            more than a proposal.
           </p>
         </div>
         <div class="about-info-chi" v-else>
